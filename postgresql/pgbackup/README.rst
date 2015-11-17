@@ -4,7 +4,7 @@ Backup PostgreSQL database using a container
 When this container is started, it will generate a new backup, backups are going to be rotated, daily backups will be keep 7 days and weekly backup will be taken each 5 days and keep 5 weeks.
 
 Container is built using Debian Jessie
-
+Script from https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux
 
 Environmet variables for config
 -------------------------------
