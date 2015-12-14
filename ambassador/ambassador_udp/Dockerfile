@@ -15,4 +15,4 @@ RUN apk update && \
     apk add socat && \
 rm -r /var/cache/
 
-CMD env | grep _TCP= | sed 's/.*_PORT_\([0-9]*\)_UDP=udp:\/\/\(.*\):\(.*\)/socat -t 100000000 UDP4-LISTEN:\1,fork,reuseaddr UDP4:\2:\3 \& wait/' | sh
+CMD env | grep _UDP= | sed 's/.*_PORT_\([0-9]*\)_UDP=udp:\/\/\(.*\):\(.*\)/socat -t 100000000 UDP4-LISTEN:\1,fork,reuseaddr UDP4:\2:\3 \& wait/' | sh
