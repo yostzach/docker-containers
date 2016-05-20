@@ -2,7 +2,7 @@ FROM debian:jessie
 
 MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
 
-ENV NGINX_VERSION 1.9.6
+ENV NGINX_VERSION 1.10.0
 ENV NAXSI_VERSION 0.54
 
 RUN gpg --keyserver pgp.mit.edu --recv-keys 2685AED4 A1C052F8 7BD9BF62
